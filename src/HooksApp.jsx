@@ -10,8 +10,9 @@
 // import {CallbackHook} from "./06-memos/CallbackHook.jsx";
 // import {Padre} from "./07-tarea-memo/Padre.jsx";
 // import './08-useReducer/intro-reducer.js'
-
-import {TodoApp} from "./08-useReducer/TodoApp.jsx";
+// import {TodoApp} from "./08-useReducer/TodoApp.jsx";
+import {MainApp} from "./09-useContext/MainApp.jsx";
+import {BrowserRouter} from "react-router-dom";
 
 export const HooksApp = () => {
   return (
@@ -27,7 +28,10 @@ export const HooksApp = () => {
       {/*<MemoHook />*/}
       {/*<CallbackHook />*/}
       {/*<Padre />*/}
-      <TodoApp/>
+      {/*<TodoApp/>*/}
+      <BrowserRouter>
+        <MainApp/>
+      </BrowserRouter>
     </>
   )
 }
